@@ -1,0 +1,1057 @@
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+/**** Base styles ****/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.7em;
+  background: #0A1722;
+  color: #FFF;
+}
+
+h1, h2, h3, p, ul, ol, pre, dl {
+  margin-bottom: 1.0em;
+}
+
+h1, h2, #super-list, .element, .tagline, #index-list, 
+.super-list .link {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1, h2, h3 { font-weight: bold; }
+
+h1 {
+  font-size: 28px;
+  font-style: italic;
+  line-height: 1.1em;
+  color: #FFDC4E;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.1em;
+  color: #FFDC4E;
+}
+
+ul, ol {
+  margin-left: 1.5em;
+}
+
+a,
+a code {
+  color: #FB4;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover code { 
+  color: #4BF; 
+}
+
+a:active,
+a:active code {
+  color: #1FB;
+  background: black;
+}
+
+a img { border: none; }
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+blockquote {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  border-left: 1px solid #333;
+  font-style: italic;
+}
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+html,
+body {
+  height: 100%;
+}
+
+div.id img.fadeout{
+opacity:1.0;-webkit-transition:opacity 
+.3s ease-in-out;-moz-transition:opacity 
+.3s ease-in-out;-o-transition:opacity 
+.3s ease-in-out;transition:opacity 
+.3s ease-in-out
+}
+
+div.id h3, div.id h2, div.id p,div.id span,div.id img{
+  opacity:1.0;-webkit-transition:opacity 
+  .3s ease-in-out;-moz-transition:opacity 
+  .3s ease-in-out;-o-transition:opacity 
+  .3s ease-in-out;transition:opacity 
+  .3s ease-in-out}
+
+div.id:hover 
+h3,div.id:hover 
+p,div.id:hover 
+span,div.id:hover 
+img{opacity:1.0}
+h3{opacity:1.0;}
+h2{opacity:1.0;}
+p{opacity:1.0;}
+div.id:hover 
+img.fadeout{opacity:.0}
+h3.fadeout{opacity:.0}
+h2.fadeout{opacity:.0}
+p.fadeout{opacity:.0}
+.item-images{display:none}
+
+
+#container {
+  border: 0px solid #666;
+  padding-top: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 60px;
+}
+
+.element {
+  width: 110px;
+  height: 110px;
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #888;
+  color: #222;
+  -webkit-border-top-right-radius: 0.6em;
+      -moz-border-radius-topright: 0.6em;
+          border-top-right-radius: 0.6em;
+  -webkit-border-bottom-left-radius: 0.6em;
+      -moz-border-radius-bottomleft: 0.6em;
+          border-bottom-left-radius: 0.6em; 
+  -webkit-border-top-left-radius: 0.6em;
+      -moz-border-radius-topleft: 0.6em;
+          border-top-left-radius: 0.6em;
+  -webkit-border-bottom-right-radius: 0.6em;
+      -moz-border-radius-bottomright: 0.6em;
+          border-bottom-right-radius: 0.6em;                    
+}
+
+.element.plus1                                                                                              { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.minus7                                                                                             { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.plus2                                                                                              { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.minus6                                                                                             { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.plus3                                                                                              { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.minus5                                                                                             { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.plus4                                                                                              { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.minus8                                                                                             { background: #1279B0; background: hsl( 201,  81%, 38%); }
+
+.element.x                                                                                                  { background: #60C76A; background: hsl( 126,  48%, 58%); }
+.element.y                                                                                                  { background: #E96199; background: hsl( 335,  76%, 65%); }
+.element.z                                                                                                  { background: #00C3CB; background: hsl( 182,  100%, 40%); }
+
+.element.time                                                                                               { background: #60C76A; background: hsl( 126,  48%, 58%); }
+.element.emotion                                                                                            { background: #E96199; background: hsl( 335,  76%, 65%); }
+.element.projection                                                                                         { background: #00C3CB; background: hsl( 182,  100%, 40%); }
+
+.element.vector                                                                                             { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.minima                                                                                             { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.maxima                                                                                             { background: #1279B0; background: hsl( 201,  81%, 38%); }
+
+.element.information                                                                                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.content                                                                                            { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.data                                                                                               { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.experience                                                                                         { background: #1279B0; background: hsl( 201,  81%, 38%); }
+
+.element.vector.information                                                                                 { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.information.organism                                                                        { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.information.organism.vector.hybrid                                                          { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.information.organism.vector.cybernetic                                                      { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.information.organism.vector.animal                                                          { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.information.organism.vector.human                                                           { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.information.organism.vector.robotic                                                         { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.information.organism.minima.composition                                                     { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.synthetic                                           { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.raw                                                 { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.artifical                                           { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.natural                                             { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.processed                                           { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.maxima.composition.shape                                               { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.loose                                         { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.dense                                         { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.blobs                                         { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.nets                                          { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.spikes                                        { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.minima.composition.shape.communication                                 { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.shape.communication.abstract                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.shape.communication.precise                         { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.shape.communication.numbers                         { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.shape.communication.words                           { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.minima.composition.shape.communication.form                            { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.information.organism.maxima.composition.shape.communication.environment                     { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.communication.environment.dream               { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.communication.environment.reality             { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.communication.environment.earth               { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.communication.environment.space               { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.information.organism.maxima.composition.shape.communication.environment.mind                { background: #1279B0; background: hsl( 201,  81%, 38%); }
+
+.element.vector.content                                                                                     { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.content.identifier                                                                          { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.content.identifier.vector.cause                                                             { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.content.identifier.vector.ego                                                               { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.content.identifier.vector.collective                                                        { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.content.identifier.vector.individual                                                        { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.content.identifier.vector.output                                                            { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.content.identifier.minima.source                                                            { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.culture                                                    { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.imagination                                                { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.literature                                                 { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.art                                                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.games                                                      { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.maxima.source.architecture                                               { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.informational                                 { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.experiential                                  { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.distributed                                   { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.consolidated                                  { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.biological                                    { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.minima.source.architecture.creation                                      { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.architecture.creation.implementation                       { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.architecture.creation.idea                                 { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.architecture.creation.work                                 { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.architecture.creation.play                                 { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.minima.source.architecture.creation.life                                 { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.content.identifier.maxima.source.architecture.creation.dimension                            { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.creation.dimension.actual                     { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.creation.dimension.virtual                    { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.creation.dimension.physicality                { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.creation.dimension.technology                 { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.content.identifier.maxima.source.architecture.creation.dimension.mind                       { background: #1279B0; background: hsl( 201,  81%, 38%); }
+
+.element.vector.data                                                                                        { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.data.notifier                                                                               { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.data.notifier.vector.on                                                                     { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.data.notifier.vector.off                                                                    { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.data.notifier.vector.meaning                                                                { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.data.notifier.vector.language                                                               { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.data.notifier.vector.context                                                                { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.data.notifier.minima.patterns                                                               { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.phases                                                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.cycles                                                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.choice                                                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.chance                                                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.result                                                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.maxima.patterns.temperature                                                   { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.cold                                              { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.hot                                               { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.order                                             { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.chaos                                             { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.uncertainty                                       { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.minima.patterns.temperature.connection                                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.temperature.connection.macro                                  { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.temperature.connection.micro                                  { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.temperature.connection.modes                                  { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.temperature.connection.positions                              { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.minima.patterns.temperature.connection.statistics                             { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.data.notifier.maxima.patterns.temperature.connection.hyperconscious                         { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.connection.hyperconscious.subconscious            { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.connection.hyperconscious.conscious               { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.connection.hyperconscious.nonpresence             { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.connection.hyperconscious.presence                { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.data.notifier.maxima.patterns.temperature.connection.hyperconscious.emergence               { background: #1279B0; background: hsl( 201,  81%, 38%); }
+
+.element.vector.experience                                                                                  { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.experience.embodied                                                                         { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.experience.embodied.vector.empty                                                            { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.experience.embodied.vector.full                                                             { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.experience.embodied.vector.amplification                                                    { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.experience.embodied.vector.tolerance                                                        { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.experience.embodied.vector.decayed                                                          { background: #BF1E35; background: hsl( 351,  73%, 43%); }
+.element.vector.experience.embodied.minima.textural                                                         { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.coarse                                                  { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.smooth                                                  { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.dreamed                                                 { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.lived                                                   { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.remembered                                              { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.maxima.textural.flowing                                                 { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.paced                                           { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.delayed                                         { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.mystery                                         { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.discovered                                      { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.struggle                                        { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.minima.textural.flowing.profound                                        { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.flowing.profound.wide                                   { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.flowing.profound.deep                                   { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.flowing.profound.emotion                                { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.flowing.profound.aesthetics                             { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.minima.textural.flowing.profound.sensation                              { background: #17B380; background: hsl( 160,  77%, 40%); }
+.element.vector.experience.embodied.maxima.textural.flowing.profound.superficial                            { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.profound.superficial.narrow                     { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.profound.superficial.high                       { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.profound.superficial.transformed                { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.profound.superficial.delivered                  { background: #1279B0; background: hsl( 201,  81%, 38%); }
+.element.vector.experience.embodied.maxima.textural.flowing.profound.superficial.alluded                    { background: #1279B0; background: hsl( 201,  81%, 38%); }
+
+
+
+.element * {
+  position: absolute;
+  margin: 0;
+}
+
+.element .symbol {
+  left: 0.2em;
+  top: 0.5em;
+  font-size: 3em;
+  line-height: 1em;
+  color: #FFF;
+}
+
+.element.large .symbol {
+  font-size: 4.5em;
+}
+
+.element.large .name {
+  bottom: 3.9em;
+  left: 0.9em;
+}
+
+.element.large .number {
+  top: 0.5em;
+}
+
+.element.large .substrate {
+  bottom: 3em;
+  left: 1em;
+}
+
+.element.large .weight {
+  bottom: 1.5em;
+  color: hsla(0,0%,0%,1);
+  left: 1.109em;
+}
+
+.element.fake .symbol {
+  color: #000;
+}
+
+.element .name {
+  color: #000;
+  left: 0.5em;
+  bottom: 3.456em;
+  font-size: 0.97em;
+  letter-spacing: -0.06em;
+}
+
+.element .weight {
+  color: #000;
+  font-size: 0.8em;
+  font-weight: bold;
+  left: 0.6em;
+  bottom: 0.6em;
+}
+
+.element .substrate {
+  font-size: 0.9em;
+  color: hsla(100,100%,100%,.5);
+  left: 0.6em;
+  bottom: 2em;
+}
+
+.element .number {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: hsla(0,0%,0%,.5);
+  right: 0.5em;
+  top: 0.3em;
+}
+
+.variable-sizes .element.width2 { width: 230px; }
+
+.variable-sizes .element.height2 { height: 230px; }
+
+.variable-sizes .element.width2.height2 {
+  font-size: 2.0em;
+}
+
+.element.large,
+.variable-sizes .element.large,
+.variable-sizes .element.large.width2.height2 {
+  font-size: 2.1em;
+  width: 350px;
+  height: 350px;
+  z-index: 100;
+}
+
+.clickable .element:hover {
+  cursor: pointer;
+}
+
+.clickable .element:hover h3 {
+  color: #000000;
+}
+
+.clickable .element:hover h2 {
+  color: white;
+}
+
+/**** Options - Filtering ****/
+
+#options {
+  padding-bottom: 1.1em;
+  margin-left: 63px;
+}
+
+#options h3 {
+  margin-bottom: 0.2em;
+  font-size: 14px;
+}
+
+#options h4 { 
+  font-weight: bold;
+}
+
+#options ul {
+  margin: 0;
+  list-style: none;
+}
+
+#options ul ul {
+  margin-left: 1.5em;
+}
+
+#options li {
+  float: left;
+  margin-bottom: 0.2em;
+}
+
+#options li a {
+  display: block;
+  padding: 0.4em 0.5em;
+  background-color: #D2EBFB;
+  color: #222;
+  font-weight: bold;
+  text-shadow: 0 1px hsla( 0, 0%, 100%, 0.5 );
+  background-image: -webkit-linear-gradient( top, hsla( 0, 0%, 100%, 0.2 ), hsla( 0, 0%, 100%, 0.0 ) );
+  background-image:    -moz-linear-gradient( top, hsla( 0, 0%, 100%, 0.2 ), hsla( 0, 0%, 100%, 0.0 ) );
+  background-image:     -ms-linear-gradient( top, hsla( 0, 0%, 100%, 0.2 ), hsla( 0, 0%, 100%, 0.0 ) );
+  background-image:      -o-linear-gradient( top, hsla( 0, 0%, 100%, 0.2 ), hsla( 0, 0%, 100%, 0.0 ) );
+  background-image:         linear-gradient( top, hsla( 0, 0%, 100%, 0.2 ), hsla( 0, 0%, 100%, 0.0 ) );
+}
+
+#options li a:hover {
+  background-color: #FFF;
+}
+
+#options li a:active {
+  background-color: #FFF;
+  -webkit-box-shadow: inset 0 2px 6px hsla( 0, 0%, 0%, 0.4 );
+     -moz-box-shadow: inset 0 2px 6px hsla( 0, 0%, 0%, 0.4 );
+       -o-box-shadow: inset 0 2px 6px hsla( 0, 0%, 0%, 0.4 );
+          box-shadow: inset 0 2px 6px hsla( 0, 0%, 0%, 0.4 );
+}
+
+#options li a {
+  border-left:  1px solid hsla( 0, 0%, 0%, 0.8 );
+  border-right: 1px solid hsla( 0, 0%, 0%, 0.8 );
+}
+
+#options li a {
+  border-radius: 4px 4px 4px 4px;
+}
+
+#options li a.selected {
+  background-color: #FF1F65;
+  text-shadow: none;
+  color: white;
+}
+
+/* Combination filter options*/
+
+#options .option-combo {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+#options .option-combo ul {
+  margin: 0 5px 12px 0;
+  display: inline-block;
+}
+
+#options .option-combo h2,
+#options .option-combo h4 {
+  line-height: 34px;
+  margin-bottom: 0;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Color shapes */
+
+.color-shape {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  float: left;
+}
+ 
+.color-shape.round {
+  -webkit-border-radius: 35px;
+     -moz-border-radius: 35px;
+          border-radius: 35px;
+}
+ 
+.color-shape.big.round {
+  -webkit-border-radius: 75px;
+     -moz-border-radius: 75px;
+          border-radius: 75px;
+}
+ 
+.color-shape.red { background: red; }
+.color-shape.blue { background: blue; }
+.color-shape.yellow { background: yellow; }
+ 
+.color-shape.wide, .color-shape.big { width: 150px; }
+.color-shape.tall, .color-shape.big { height: 150px; }
+
+.color-shape a {
+  display: block;
+  height: 100%;
+}
+
+.color-shape a:hover {
+  background: white;
+  background: hsla( 0, 0%, 100%, 0.5 );
+}
+
+/**** Horizontal ****/
+
+.horizontal #container {
+  height: 80%;
+}
+
+#copy {
+  max-width: 640px;
+}
+
+/**** Photo demo ****/
+
+.photos .photo {
+  width: 320px;
+  margin: 5px;
+  float: left;
+}
+
+.photos .photo img {
+  display: block;
+  width: 100%;
+}
+
+#content {
+  margin-left: 80px;
+}
+
+.hypercosmix #content {
+  height: 100%;
+}
+
+/**** Docs ****/
+
+.docs #content {
+  max-width: 640px;
+}
+
+.docs #content a:hover {
+  border-bottom: 1px dotted;
+}
+
+/**** Doc page nav ****/
+
+
+
+#site-nav {
+  width: 200px;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+#site-nav h1 {
+  font-size: 24px;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+#site-nav h2 {
+  font-size: 17px;
+  font-weight: normal;
+  margin: 0 0 0.3em;
+  border-top: none;
+}
+
+#site-nav h1 a { color: #4FB; }
+#site-nav h1 a:hover { color: #4BF; }
+
+#site-nav ul {
+  list-style: none;
+  margin: 0 0 1.0em;
+  font-weight: bold;
+}
+
+#site-nav ul ul { margin-bottom: 0; }
+
+#site-nav ul a {
+  display: block;
+  border: none;
+  padding: 1px 5px;
+}
+
+#site-nav ul .current a {
+  background: hsla( 0, 0%, 0%, 0.3 );
+  color: #1BF;
+}
+#site-nav ul a:hover,
+#site-nav ul .current a:hover { color: white; }
+  
+#site-nav ul .current .toc a {
+  font-size: 12px;
+  padding-left: 1.2em;
+  font-weight: normal;
+}
+
+/**** Doc content ****/
+
+.docs #content h2 {
+  border-top: 1px solid #333;
+  padding-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.docs #content h2:target { 
+  padding: 10px;
+  background: white;
+  color: #222;
+}
+
+.docs #content h3 {
+  color: #FEC;
+  background: hsla( 0, 0%, 75%, 0.05 );
+  padding: 2px 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.15em;
+}
+
+.docs #content h4 {
+  margin-bottom: 0.5em;
+  font-size: 14px;
+}
+
+
+footer {
+  font-size: 12px;
+  font-style: italic;
+  border-top: 0px solid #333;
+  margin-left: 65px;
+  padding: 0.8em 0;
+}
+
+pre {
+  padding: 10px;
+}
+
+pre, code {
+  background: black;
+  color: white;
+  font-family: 'Monaco', monospace, sans-serif;
+}
+
+#content code {
+  font-size: 12px;
+}
+
+#content pre {
+  line-height: 1.6em;
+}
+
+h3#options {
+  padding-bottom: 0;
+}
+
+.option-def dl dt,
+.option-def dl dd {
+  float: left;
+  padding: 0 1.2em;;
+  background: #161616;
+  line-height: 36px;
+  height: 36px;
+}
+
+.option-def dl.header dt,
+.option-def dl.header dd {
+  background: #444;
+}
+
+.option-def dl .option-type {
+  font-size: 13px;
+  color: #AAA;
+  font-style: italic;
+}
+
+.option-def dl dd {
+  border-left: 1px solid #222;
+}
+
+/* Tagline */
+
+.docs .tagline {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+/* as-is from MIT */
+
+.docs .as-is {
+  font-size: 95%;
+}
+
+/* Commercial license blurb */
+
+.docs #commercial {
+  background: white;
+  padding: 10px;
+  font-size: 14px;
+  color: #1F1F1D;
+}
+
+.docs #commercial a { font-weight: bold;}
+
+/**** Pygments ****/
+
+code .s1,
+code .s { color: #78BD55; } /* string */
+code .mi, /* integer */
+code .cp, /* doctype */
+code .kc { color: #5298D4; } /*boolean*/
+code .k { color: #E39B79; } /* keyword */
+code .kd, /* storage */
+code .na { color: #A9D866; } /* markup attribute */
+code .p  { color: #EDB; } /* punctuation */
+code .o  { color: #F63; }   /* operator */
+code .nb { color: #AA97AC;} /* support */
+
+/* comment */
+code .c,
+code .c1 { color: #666; font-style: italic; }
+
+code .nt { color: #A0C8FC; } /* Markup open tag */
+
+code .nf { color: #9EA8B8; } /* css id */
+code .nc { color: #A78352; }  /* CSS class */
+code .m  { color: #DE8E50; } /* CSS value */
+code .nd { color: #9FAD7E; } /* CSS pseudo selector */
+
+
+
+/**** Super list ****/
+
+
+/**** Sites using Isotope ****/
+
+#sites h2 {
+  display: none;
+  padding: 0.4em;
+  line-height: 32px;
+  margin-bottom: 0.4em;
+  -webkit-transition: background-color 0.8s;
+     -moz-transition: background-color 0.8s;
+       -o-transition: background-color 0.8s;
+          transition: background-color 0.8s;
+}
+
+#sites h2 img {
+  display: inline-block;
+  margin-right: 0.4em;
+  vertical-align: bottom;
+}
+
+#sites h2.loading {
+  background: white;
+  color: #222;
+}
+#sites h2.error {
+  background: red;
+  color: #222;
+}
+
+
+#sites ul {
+  margin: 0;
+}
+
+.super-list .example {
+  list-style: none;
+  float: left;
+  width: 230px;
+  margin: 5px;
+}
+
+.super-list .example a,
+.super-list .example b,
+.super-list .example img {
+  display: block;
+}
+
+.super-list .example img { width: 100%; }
+
+.super-list .example a {
+  background: #1F1E1D;
+}
+
+.super-list .example a:hover {
+  background: white;
+  color: #111;
+}
+
+.super-list .example b { 
+  font-weight: bold;
+  line-height: 1.3em;
+  padding: 3px;
+  padding-top: 8px;
+}
+
+.super-list .link {
+  float: left;
+  position: relative;
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 300;
+  margin: 5px;
+}
+
+.super-list .link {
+  width: 230px;
+  height: 110px;
+}
+
+.super-list .link a {
+  display: block;
+  padding: 10px;
+  padding-left: 65px;
+  height: 90px;
+  background: #1F1E1D;
+  color: #FE5;
+  -webkit-border-radius: 14px;
+     -moz-border-radius: 14px;
+          border-radius: 14px;
+}
+
+.super-list .link a:before {
+  content: '➔';
+  font-size: 70px;
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.super-list .link.away a:before {
+  top: 25px;
+  left: 0px;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.super-list .link a:hover {
+  background: #E58;
+  color: white;
+}
+
+.super-list .feature .name {
+  bottom: auto;
+  top: 140px;
+  left: 18px;
+  font-size: 20px;
+}
+
+/**** BIG Graph ****/
+
+.big-graph {
+  background: white;
+  height: 600px;
+  margin: 20px auto;
+}
+
+.big-graph .project {
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+
+.big-graph .project .icon {
+  pointer-events: none;
+  width: 31px;
+  height: 31px;
+  background: white;
+  margin-left: 7px;
+  -webkit-transition: -webkit-transform 0.25s;
+     -moz-transition: -moz-transform    0.25s;
+      -ms-transition: -ms-transform     0.25s;
+       -o-transition: -o-transform      0.25s;
+          transition: transform         0.25s;
+}
+
+.big-graph .project:hover {
+  z-index: 5;
+  
+}
+
+.big-graph .project:hover .icon {
+  -webkit-transform: scale(3);
+     -moz-transform: scale(3);
+      -ms-transform: scale(3);
+       -o-transform: scale(3);
+          transform: scale(3);
+}
+
+.big-graph .project.commercial .icon { background: #6B6B6B; }
+.big-graph .project.urbanism .icon { background: #00CF00; }
+.big-graph .project.public-space .icon { background: #FF8D00; }
+.big-graph .project.culture .icon { background: #D61919; }
+.big-graph .project.body-culture .icon { background: #00ECFF; }
+.big-graph .project.health .icon { background: #FF2251; }
+.big-graph .project.education .icon { background: #00A700; }
+.big-graph .project.housing .icon { background: #FF02FF; }
+.big-graph .project.hotel .icon { background: #0000C3; }
+.big-graph .project.media .icon { background: #292929; }
+
+.big-graph .project p {
+  line-height: 14px;
+  font-size: 10.5px;
+  color: black;
+  margin-left: 7px;
+}
+
+/**** Infinite Scroll ****/
+
+#infscr-loading {
+  position: fixed;
+  text-align: center;
+  bottom: 30px;
+  left: 42%;
+  z-index: 100;
+  background: white;
+  background: hsla( 0, 0%, 100%, 0.9 );
+  padding: 20px;
+  color: #222;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+}
+
+
+
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
