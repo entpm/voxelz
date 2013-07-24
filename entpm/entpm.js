@@ -32,11 +32,35 @@ var voxelz = {
 		},
 		"composition": {
 			level: 1,
-			maxima: "syntetic",
+			maxima: "synthetic",
 			minima: "raw",
-			x: "artifical",
+			x: "artificial",
 			y: "natural",
 			z: "processed"
+		},
+		"shape": {
+			level: 2,
+			maxima: "loose",
+			minima: "dense",
+			x: "blobs",
+			y: "nets",
+			z: "spikes"
+		},
+		"communication": {
+			level: 1,
+			maxima: "precise",
+			minima: "abstract",
+			x: "numbers",
+			y: "words",
+			z: "forms"
+		},
+		"environment": {
+			level: 2,
+			maxima: "dream",
+			minima: "reality",
+			x: "earth",
+			y: "space",
+			z: "mind"
 		}
 	}
 };
