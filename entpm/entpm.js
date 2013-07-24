@@ -1,10 +1,23 @@
 function Voxel(name, aspects, descriptions) {
+	function getLevelName(level) {
+		switch(level) {
+			case 0:
+				return "vector";
+			case 1:
+				return "maxima";
+			case 2:
+				return "minima";
+		}
+	};
+
 	aspects = aspects || [];
 	this.name = name;
 	this.aspects = aspects;
 	for(description in descriptions) {
 		this[description] = descriptions[description];
 	};
+
+	this.levelName = getLevelName(this.level);
 };
 
 var voxelz = {

@@ -4,8 +4,15 @@ entpm.voxelz.forEach(function(voxel){
 	var element = voxelTemplate.content.cloneNode(true);
 	element.querySelector(".element").className += " " + voxel.aspects.join(" ");
 	element.querySelector(".name").innerHTML = voxel.name;
+
+	/* Level */
 	element.querySelector(".number").innerHTML = voxel.level;
+	element.querySelector(".element").className += " " + voxel.levelName;
+
+	/* Substrate */
 	element.querySelector(".substrate").innerHTML = voxel.substrate;
+	element.querySelector(".element").dataset.category = voxel.substrate;
+	element.querySelector(".element").className += " " + voxel.substrate;
 
 	element.querySelector(".symbol").innerHTML = (Object.keys(voxelz).indexOf(voxel.substrate)+1);
 
