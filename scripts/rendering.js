@@ -29,11 +29,24 @@ ENTPM.VOXELZ.forEach(function(voxel){
 
 	// Subname
 
-	element.querySelector(".substrate").innerHTML = voxel.substrate;
+	if(voxel.elementalType) {
+		element.querySelector(".substrate").innerHTML = voxel.elementalType;
+	};
+
+	if(voxel.substrate) {
+		element.querySelector(".substrate").innerHTML = voxel.substrate;
+	};
 
   // Long ID
 
   element.querySelector(".weight").innerHTML = "?";
+
+  if(voxel.elementalType) {
+  	element.querySelector(".weight").innerHTML = voxel.indexes[0];
+  } else {
+  	// TODO
+  	element.querySelector(".weight").innerHTML = "0."+voxel.indexes[0];
+  };
 
 
 	container.appendChild(element);

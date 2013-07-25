@@ -3,6 +3,13 @@ ENTPM.VOXELZ = [];
 ENTPM.STRUCTURE.substrates.forEach(function(substrate) {
 	/* SUBSTRATES */
 	var voxel = new ENTPM.Voxel(substrate.name);
+	voxel.indexes.push(substrate.index);
+	voxel.elementalType = ENTPM.STRUCTURE.elementalTypes[substrate.index].name;
+
+	ENTPM.VOXELZ.push(voxel);
+
+	/* Substrate first voxel */
+	var voxel = new ENTPM.Voxel(substrate.name);
 
 	voxel.indexes.push(substrate.index);
 	voxel.substrate = substrate.name;
