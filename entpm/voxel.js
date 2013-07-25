@@ -1,5 +1,4 @@
-ENTPM.Voxel = function Voxel(name, params) {
+ENTPM.Voxel = function Voxel(name) {
 	this.name = name;
-	this.params = params;
 	this.indexes = [];
 };

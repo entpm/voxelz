@@ -1,7 +1,5 @@
 ENTPM.VOXELZ = [];
 
-
-
 ENTPM.STRUCTURE.substrates.forEach(function(substrate) {
 	/* SUBSTRATES */
 	var voxel = new ENTPM.Voxel(substrate.name);
@@ -28,5 +26,4 @@ ENTPM.STRUCTURE.substrates.forEach(function(substrate) {
 	})
 
 	/* VARIABLES */
-
 });
