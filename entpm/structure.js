@@ -20,23 +20,23 @@ ENTPM.STRUCTURE = {
 
 	elementalTypes: {
 		"0": {
-			name: "creative productivity",
+			name: "living flow",
 			level: "vector"
 		},
 		"1": {
-			name: "science",
+			name: "settle",
 			level: "minima"
 		},
 		"2": {
-			name: "psychology",
+			name: "departure",
 			level: "maxima"
 		},
 		"3": {
-			name: "philosophy",
+			name: "travel",
 			level: "minima"
 		},
 		"4": {
-			name: "art",
+			name: "arrival",
 			level: "maxima"
 		}
 	},
@@ -120,7 +120,7 @@ ENTPM.STRUCTURE = {
 			x: "earth",
 			y: "space",
 			z: "mind"
-		}
+		},
 	//  content substrate
 		"identifier": {
 			maxima: "cause",
@@ -156,7 +156,7 @@ ENTPM.STRUCTURE = {
 			x: "physicality",
 			y: "technology",
 			z: "mind"
-		}
+		},
 	//  data substrate
 		"notifier": {
 			maxima: "on",
@@ -192,7 +192,7 @@ ENTPM.STRUCTURE = {
 			x: "non-presence",
 			y: "presence",
 			z: "emergence"
-		}
+		},
 	//  experience substrate
 		"embodied": {
 			maxima: "empty",
