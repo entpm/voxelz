@@ -85,12 +85,149 @@ ENTPM.STRUCTURE = {
 	},
 
 	variables: {
+	//  information substrate
 		"organism": {
 			maxima: "hybrid",
 			minima: "cybernetic",
 			x: "animal",
 			y: "human",
 			z: "robotic"
+		},
+		"composition": {
+			maxima: "synthetic",
+			minima: "raw",
+			x: "artificial",
+			y: "natural",
+			z: "processed"
+		},
+		"shape": {
+			maxima: "loose",
+			minima: "dense",
+			x: "blobs",
+			y: "nets",
+			z: "spikes"
+		},
+		"communication": {
+			maxima: "precise",
+			minima: "abstract",
+			x: "numbers",
+			y: "words",
+			z: "forms"
+		},
+		"environment": {
+			maxima: "dream",
+			minima: "reality",
+			x: "earth",
+			y: "space",
+			z: "mind"
+		}
+	//  content substrate
+		"identifier": {
+			maxima: "cause",
+			minima: "ego",
+			x: "collective",
+			y: "individual",
+			z: "output"
+		},
+		"source": {
+			maxima: "culture",
+			minima: "imagination",
+			x: "literature",
+			y: "art",
+			z: "games"
+		},
+		"architecture": {
+			maxima: "informational",
+			minima: "experiential",
+			x: "distributed",
+			y: "consolidated",
+			z: "biological"
+		},
+		"creation": {
+			maxima: "implementation",
+			minima: "idea",
+			x: "work",
+			y: "play",
+			z: "life"
+		},
+		"dimension": {
+			maxima: "actual",
+			minima: "virtual",
+			x: "physicality",
+			y: "technology",
+			z: "mind"
+		}
+	//  data substrate
+		"notifier": {
+			maxima: "on",
+			minima: "off",
+			x: "meaning",
+			y: "language",
+			z: "context"
+		},
+		"patterns": {
+			maxima: "phases",
+			minima: "cycles",
+			x: "choice",
+			y: "chance",
+			z: "result"
+		},
+		"temperature": {
+			maxima: "cold",
+			minima: "hot",
+			x: "order",
+			y: "chaos",
+			z: "uncertainty"
+		},
+		"connections": {
+			maxima: "macro",
+			minima: "micro",
+			x: "modes",
+			y: "positions",
+			z: "statistics"
+		},
+		"hyperconscious": {
+			maxima: "subconscious",
+			minima: "conscious",
+			x: "non-presence",
+			y: "presence",
+			z: "emergence"
+		}
+	//  experience substrate
+		"embodied": {
+			maxima: "empty",
+			minima: "full",
+			x: "amplification",
+			y: "tolerance",
+			z: "decayed"
+		},
+		"textural": {
+			maxima: "coarse",
+			minima: "smooth",
+			x: "dreamed",
+			y: "lived",
+			z: "remembered"
+		},
+		"flowing": {
+			maxima: "paced",
+			minima: "delayed",
+			x: "mystery",
+			y: "discovered",
+			z: "struggle"
+		},
+		"profound": {
+			maxima: "wide",
+			minima: "deep",
+			x: "emotion",
+			y: "aesthetics",
+			z: "sensation"
+		},
+		"superficial": {
+			maxima: "narrow",
+			minima: "high",
+			x: "transformed",
+			y: "delivered",
+			z: "alluded"
 		}
 	}
 };
