@@ -12,6 +12,7 @@ ENTPM.STRUCTURE.substrates.forEach(function(substrate) {
 	/* Substrate first voxel */
 	var voxel = new ENTPM.Voxel(substrate.name);
 	voxel.indexes.push(substrate.index);
+	voxel.indexes.push("0");
 	voxel.substrate = substrate.name;
 	voxel.level = "vector";
 	voxel.levelIndex = "0";
@@ -31,6 +32,8 @@ ENTPM.STRUCTURE.substrates.forEach(function(substrate) {
 		voxel.elementals = elementalsStack;
 		voxel.substrate = substrate.name;
 		voxel.indexes.push(substrate.index);
+		voxel.indexes.push(level);
+		voxel.indexes.push("+");
 		voxel.level = ENTPM.STRUCTURE.elementalTypes[level].level;
 		voxel.levelIndex = ENTPM.STRUCTURE.levelTypes[voxel.level].index;
 		ENTPM.VOXELZ.push( voxel );

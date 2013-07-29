@@ -42,6 +42,14 @@ ENTPM.VOXELZ.forEach(function(voxel){
 
 	element.querySelector(".symbol").innerHTML = voxel.indexes[0];
 
+	if(voxel.indexes.length >= 2) {
+		element.querySelector(".symbol").innerHTML += "."+voxel.indexes[1];
+	};
+
+	if(voxel.indexes.length >= 3) {
+		element.querySelector(".symbol").innerHTML += voxel.indexes[2];
+	};
+
 	// Name
 
 	element.querySelector(".name").innerHTML = voxel.name;
