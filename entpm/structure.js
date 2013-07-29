@@ -43,13 +43,13 @@ ENTPM.STRUCTURE = {
 
 	levelTypes: {
 		"vector": {
-			level: 0
+			index: 0
 		},
 		"minima": {
-			level: 1
+			index: 1
 		},
 		"maxima": {
-			level: 2
+			index: 2
 		}
 	},
 

@@ -5,6 +5,8 @@ ENTPM.STRUCTURE.substrates.forEach(function(substrate) {
 	var voxel = new ENTPM.Voxel(substrate.name);
 	voxel.indexes.push(substrate.index);
 	voxel.elementalType = ENTPM.STRUCTURE.elementalTypes[substrate.index].name;
+	voxel.level = ENTPM.STRUCTURE.elementalTypes[substrate.index].level;
+	voxel.levelIndex = ENTPM.STRUCTURE.levelTypes[voxel.level].index;
 
 	ENTPM.VOXELZ.push(voxel);
 

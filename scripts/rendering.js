@@ -14,10 +14,13 @@ ENTPM.VOXELZ.forEach(function(voxel){
 		element.querySelector(".element").className += " " + voxel.substrate;
 	};
 
+	if(voxel.elementalType) {
+		element.querySelector(".element").className += " " + voxel.name;
+	};
+
 
 	// Top number
-
-	element.querySelector(".number").innerHTML = "?";
+	element.querySelector(".number").innerHTML = voxel.levelIndex;
 
 	// Short big ID
 
