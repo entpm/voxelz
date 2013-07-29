@@ -6,6 +6,18 @@ ENTPM.VOXELZ.forEach(function(voxel){
 
 
 	// Class names
+	element.querySelector(".element").className += " " + voxel.name;
+
+	if(!voxel.elementalType) {
+		element.querySelector(".element").className += " " + "vector";
+	};
+
+	if(voxel.elementals) {
+		for(var i = 0; i < voxel.elementals.length; i++) {
+			element.querySelector(".element").className += " " +  voxel.elementals[i];
+		};
+	};
+
 	if(voxel.level) {
 		element.querySelector(".element").className += " " + voxel.level;
 	};
@@ -16,6 +28,10 @@ ENTPM.VOXELZ.forEach(function(voxel){
 
 	if(voxel.elementalType) {
 		element.querySelector(".element").className += " " + voxel.name;
+	};
+
+	if(voxel.elemental) {
+		element.querySelector(".element").className += " " + voxel.elemental;
 	};
 
 
