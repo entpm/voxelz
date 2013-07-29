@@ -29,15 +29,33 @@ ENTPM.STRUCTURE.substrates.forEach(function(substrate) {
 		elementalsStack.push(elementalName);
 
 		var voxel = new ENTPM.Voxel(elementalName);
-		voxel.elementals = elementalsStack;
 		voxel.substrate = substrate.name;
+		voxel.elementals = elementalsStack;
 		voxel.indexes.push(substrate.index);
 		voxel.indexes.push(level);
 		voxel.indexes.push("+");
 		voxel.level = ENTPM.STRUCTURE.elementalTypes[level].level;
 		voxel.levelIndex = ENTPM.STRUCTURE.levelTypes[voxel.level].index;
 		ENTPM.VOXELZ.push( voxel );
+
+
+		/* VARIABLES */
+		var variables = ENTPM.STRUCTURE.variables[elementalName];
+
+		Object.keys(variables).forEach(function(variableTypeName) {
+			var variableName = variables[variableTypeName];
+
+			var voxel = new ENTPM.Voxel(variableName);
+			voxel.substrate = substrate.name;
+			voxel.elementals = elementalsStack;
+			voxel.indexes.push(substrate.index);
+			voxel.indexes.push(level);
+			voxel.indexes.push(variableTypeName[0]);
+			voxel.level = ENTPM.STRUCTURE.elementalTypes[level].level;
+			voxel.levelIndex = ENTPM.STRUCTURE.levelTypes[voxel.level].index;
+
+			ENTPM.VOXELZ.push( voxel );
+		})
 	})
 
-	/* VARIABLES */
 });
