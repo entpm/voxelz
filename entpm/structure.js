@@ -84,6 +84,30 @@ ENTPM.STRUCTURE = {
 		}
 	},
 
+	variableTypes: {
+		minima: {
+			index: "▲"
+		},
+		maxima: {
+			index: "▼"
+		},
+		x: {
+			index: "x"
+		},
+		y: {
+			index: "y"
+		},
+		z: {
+			index: "z"
+		},
+		a: {
+			index: "*"
+		},
+		b: {
+			index: "**"
+		}
+	},
+
 	variables: {
 	//  information substrate
 		"organism": {

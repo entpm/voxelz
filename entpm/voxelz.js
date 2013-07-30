@@ -50,7 +50,7 @@ ENTPM.STRUCTURE.substrates.forEach(function(substrate) {
 			voxel.elementals = elementalsStack;
 			voxel.indexes.push(substrate.index);
 			voxel.indexes.push(level);
-			voxel.indexes.push(variableTypeName[0]);
+			voxel.indexes.push(ENTPM.STRUCTURE.variableTypes[variableTypeName].index);
 			voxel.level = ENTPM.STRUCTURE.elementalTypes[level].level;
 			voxel.levelIndex = ENTPM.STRUCTURE.levelTypes[voxel.level].index;
 
