@@ -21,35 +21,221 @@ ENTPM.STRUCTURE = {
 	elementalTypes: {
 		"0": {
 			name: "living flow",
-			level: "vector"
+			level: "vector",
+			repo: "knowledge",
+			factor: "fractal",
+			bias: "value",
+			persona: "flipswitch",
+			vnlft: "node deposit",
+			interplay: "creative intelligence"
 		},
 		"1": {
 			name: "settle",
-			level: "minima"
+			level: "minima",
+			repo: "science",
+			factor: "curiosity",
+			bias: "informational",
+			persona: "realist",
+			vnlft: "technique",
+			interplay: "creative productivity"
 		},
 		"2": {
 			name: "departure",
-			level: "maxima"
+			level: "maxima",
+			repo: "psychology",
+			factor: "care",
+			bias: "emotional",
+			persona: "visionary",
+			vnlft: "variable",
+			interplay: "operating system"
 		},
 		"3": {
 			name: "travel",
-			level: "minima"
+			level: "minima",
+			repo: "philosophy",
+			factor: "guidance",
+			bias: "destructive",
+			persona: "critic",
+			vnlft: "fluctuation",
+			interplay: "fluid fractal holographic"
 		},
 		"4": {
 			name: "arrival",
-			level: "maxima"
+			level: "maxima",
+			repo: "art",
+			factor: "love",
+			bias: "creative",
+			persona: "artist",
+			vnlft: "non-localised",
+			interplay: "interface of restraint"
 		}
 	},
 
 	levelTypes: {
 		"vector": {
-			index: 0
+			level: 0
 		},
 		"minima": {
-			index: 1
+			level: 1
 		},
 		"maxima": {
-			index: 2
+			level: 2
+		}
+	},
+
+	compassTypes: {
+		"string": {
+			level: "vector",
+			direction: "all",
+			speed: "all",
+			state: "all",
+			mode: "all",
+			elementals: "0"
+		}
+		"-8": {
+			level: "maxima",
+			direction: "north west",
+			speed: "fast",
+			state: "past",
+			mode: "past",
+			elementals: "4"
+		},
+		"+1": {
+			level: "minima",
+			direction: "north",
+			speed: "slow",
+			state: "past",
+			mode: "becoming",
+			elementals: "3"
+		},
+		"-7": {
+			level: "maxima",
+			direction: "north west",
+			speed: "fast",
+			state: "past",
+			mode: "emerging",
+			elementals: "2"
+		},
+		"+2": {
+			level: "minima",
+			direction: "east",
+			speed: "slow",
+			state: "present",
+			mode: "being",
+			elementals: "1"
+		},
+		"-6": {
+			level: "maxima",
+			direction: "south east",
+			speed: "fast",
+			state: "present",
+			mode: "being",
+			elementals: "1"
+		},
+		"+3": {
+			level: "minima",
+			direction: "south",
+			speed: "slow",
+			state: "future",
+			mode: "emerging",
+			elementals: "2"
+		},
+		"-5": {
+			level: "maxima",
+			direction: "south west",
+			speed: "fast",
+			state: "future",
+			mode: "begoing",
+			elementals: "3"
+		},
+		"+4": {
+			level: "minima",
+			direction: "west",
+			speed: "slow",
+			state: "future",
+			mode: "future",
+			elementals: "4"
+		}
+	},
+
+	axisTypes: {
+		"x": {
+			name: "time",
+			direction: "horizontal",
+			affinity: "timelines",
+			hyperparameter: "hyperphysics",
+			entpm: "personas",
+			code: "operations",
+			coordinate: "resonance core",
+			multiple: "frequency",
+			intersection: "events",
+			maxima_a: "effort",
+			minima_a: "momentum",
+			maxima_b: "reality",
+			minima_b: "idea",
+			decay: "present",
+			activity_x: "seek",
+			activity_y: "search",
+			activity_z: "explore",
+
+			//vector of forces
+			narrative: "recognition",
+			vof_x1_x: "balance",
+			vof_x2_y: "conflict",
+			survival: "persistence",
+			growth: "sight"
+		},
+		"y": {
+			name: "emotion",
+			direction: "vertical",
+			affinity: "actions",
+			hyperparameter: "hyperneurology",
+			entpm: "entanglement",
+			code: "dynamics",
+			coordinate: "nerve synapse",
+			multiple: "neuron",
+			intersection: "experiences",
+			maxima_a: "emotion",
+			minima_a: "passion",
+			maxima_b: "failure",
+			minima_b: "success",
+			decay: "uncertainty",
+			activity_x: "observe",
+			activity_y: "spectate",
+			activity_z: "curate",
+
+			//vector of forces
+			narrative: "purpose",
+			vof_y1_x: "requirement",
+			vof_y2_z: "occurrence",
+			survival: "intention",
+			growth: "unintention"
+		},
+		"z": {
+			name: "projection",
+			direction: "diagonal",
+			affinity: "interfaces" "databases",
+			hyperparameter: "hyperbiology",
+			entpm: "metaconstructs",
+			code: "utilisations",
+			coordinate: "living cell",
+			multiple: "cell",
+			intersection: "perspectives",
+			maxima_a: "force",
+			minima_a: "expansion",
+			maxima_b: "society+physciality",
+			minima_b: "mind+us+progress",
+			decay: "normalisation",
+			activity_x: "focus",
+			activity_y: "create",
+			activity_z: "expand",
+
+			//vector of forces
+			narrative: "discovery",
+			vof_z1_z: "participation",
+			vof_z2_y: "fusion",
+			survival: "delivery",
+			growth: "possibility"
 		}
 	},
 
