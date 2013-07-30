@@ -36,6 +36,7 @@ ENTPM.VOXELZ.forEach(function(voxel){
 
 
 	// Top number
+
 	element.querySelector(".number").innerHTML = voxel.levelIndex;
 
 	// Short big ID
@@ -66,14 +67,27 @@ ENTPM.VOXELZ.forEach(function(voxel){
 
   // Long ID
 
-  element.querySelector(".weight").innerHTML = "?";
+  element.querySelector(".weight").innerHTML = "";
 
-  if(voxel.elementalType) {
-  	element.querySelector(".weight").innerHTML = voxel.indexes[0];
-  } else {
-  	// TODO
-  	element.querySelector(".weight").innerHTML = "0."+voxel.indexes[0];
+  if(!voxel.elementalType) {
+  	element.querySelector(".weight").innerHTML = "0."
   };
+	element.querySelector(".weight").innerHTML += voxel.indexes[0];
+
+	if(voxel.indexes.length >= 3) {
+		element.querySelector(".weight").innerHTML += ".0"
+
+		// TODO X.0+ has additional 0 at the end
+		element.querySelector(".weight").innerHTML += "."+voxel.levelIndex;
+
+		for(var i = 1; i <= Number(voxel.indexes[1]); i++) {
+			element.querySelector(".weight").innerHTML += ".0";
+		};
+
+		if(voxel.indexes[2] != "+") {
+			element.querySelector(".weight").innerHTML += "."+voxel.indexes[2];
+		};
+	};
 
 
 	container.appendChild(element);
