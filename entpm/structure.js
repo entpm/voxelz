@@ -73,13 +73,13 @@ ENTPM.STRUCTURE = {
 
 	levelTypes: {
 		"vector": {
-			level: 0
+			index: 0
 		},
 		"minima": {
-			level: 1
+			index: 1
 		},
 		"maxima": {
-			level: 2
+			index: 2
 		}
 	},
 
@@ -239,6 +239,37 @@ ENTPM.STRUCTURE = {
 		}
 	},
 
+	processmechTypes: {
+		"cycle1": {
+			c1.1a: "define",
+			c1.1b: "scope",
+			c1.2a: "reuse",
+			c1.2b: "scavenge",
+			c1.3a: "enhance",
+			c1.3b: "upgrade",
+			c1.4a: "merge",
+			c1.4b: "unite",
+			c1.5a: "release",
+			c1.5b: "survive",
+			c1.6a: "delete",
+			c1.6b: "detach"
+		},
+		"cycle2": {
+			c2.1a: "gather",
+			c2.1b: "group",
+			c2.2a: "order",
+			c2.2b: "prioritise",
+			c2.3a: "isolate",
+			c2.3b: "nurture",
+			c2.4a: "clean",
+			c2.4b: "recognise",
+			c2.5a: "squash",
+			c2.5b: "destroy",
+			c2.6a: "inspect",
+			c2.6b: "collate"
+		}
+	},
+
 	elementals: {
 		"information": {
 			"0": "organism",
@@ -267,6 +298,30 @@ ENTPM.STRUCTURE = {
 			"2": "flowing",
 			"3": "profound",
 			"4": "superficial"
+		}
+	},
+
+	variableTypes: {
+		minima: {
+			index: "▲"
+		},
+		maxima: {
+			index: "▼"
+		},
+		x: {
+			index: "x"
+		},
+		y: {
+			index: "y"
+		},
+		z: {
+			index: "z"
+		},
+		a: {
+			index: "*"
+		},
+		b: {
+			index: "**"
 		}
 	},
 
