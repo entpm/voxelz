@@ -73,12 +73,24 @@ ENTPM.STRUCTURE = {
 
 	levelTypes: {
 		"vector": {
+			name: "organism",
+			state: "conscious",
+			mode: "flows",
+			amplitude: "ground",
 			index: 0
 		},
 		"minima": {
+			name: "information",
+			state: "subconscious",
+			mode: "creations",
+			amplitude: "water",
 			index: 1
 		},
 		"maxima": {
+			name: "salience",
+			state: "hyperconscious",
+			mode: "archetypes",
+			amplitude: "sky",
 			index: 2
 		}
 	},
@@ -156,6 +168,33 @@ ENTPM.STRUCTURE = {
 			mode: "future",
 			elementals: "4"
 		}
+	},
+
+	rippleTypes: {
+		"ripple1": {
+			level: "minima",
+			topology1: "-6",
+			topology2: "+2",
+			emergence: "inner"
+		},
+		"ripple1": {
+			level: "minima",
+			topology1: "-6",
+			topology2: "+2",
+			emergence: "inner"
+		},
+		"ripple1": {
+			level: "minima",
+			topology1: "-6",
+			topology2: "+2",
+			emergence: "inner"
+		},
+		"ripple1": {
+			level: "minima",
+			topology1: "-6",
+			topology2: "+2",
+			emergence: "inner"
+		},
 	},
 
 	axisTypes: {
@@ -236,6 +275,37 @@ ENTPM.STRUCTURE = {
 			vof_z2_y: "fusion",
 			survival: "delivery",
 			growth: "possibility"
+		}
+	},
+
+	vnlftTypes: {
+		"variable": {
+			elemental: "identifier",
+			persona: "visionary",
+			state: "emotional",
+			mode: "care",
+			frequency: "theta"
+		},
+		"non-localised": {
+			elemental: "embodied",
+			persona: "artist",
+			state: "tranced",
+			mode: "love",
+			frequency: "delta"
+		},
+		"fluctuation": {
+			elemental: "notifier",
+			persona: "critic",
+			state: "instinctual",
+			mode: "guidance",
+			frequency: "beta"
+		},
+		"technique": {
+			elemental: "organism",
+			persona: "realist",
+			state: "sedated",
+			mode: "curiosity",
+			frequency: "alpha"
 		}
 	},
 
