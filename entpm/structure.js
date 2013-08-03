@@ -171,11 +171,11 @@ ENTPM.STRUCTURE = {
 	},
 
 	rippleTypes: {
-		"ripple1": {
-			level: "minima",
-			topology1: "-6",
-			topology2: "+2",
-			emergence: "inner"
+		"wave": {
+			level: "vector",
+			topology1: "all",
+			topology2: "all",
+			emergence: "all"
 		},
 		"ripple1": {
 			level: "minima",
@@ -183,18 +183,24 @@ ENTPM.STRUCTURE = {
 			topology2: "+2",
 			emergence: "inner"
 		},
-		"ripple1": {
+		"ripple2": {
+			level: "maxima",
+			topology1: "+3",
+			topology2: "-7",
+			emergence: "outer"
+		},
+		"ripple3": {
 			level: "minima",
-			topology1: "-6",
-			topology2: "+2",
+			topology1: "-5",
+			topology2: "+1",
 			emergence: "inner"
 		},
-		"ripple1": {
-			level: "minima",
-			topology1: "-6",
-			topology2: "+2",
-			emergence: "inner"
-		},
+		"ripple4": {
+			level: "maxima",
+			topology1: "+4",
+			topology2: "-8",
+			emergence: "outer"
+		}
 	},
 
 	axisTypes: {
