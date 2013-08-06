@@ -24,19 +24,19 @@ ENTPM.STRUCTURE = {
 			level: "vector"
 		},
 		"1": {
-			name: "settle",
+			name: "science",
 			level: "minima"
 		},
 		"2": {
-			name: "departure",
+			name: "psychology",
 			level: "maxima"
 		},
 		"3": {
-			name: "travel",
+			name: "philosophy",
 			level: "minima"
 		},
 		"4": {
-			name: "arrival",
+			name: "art",
 			level: "maxima"
 		}
 	},
@@ -86,10 +86,10 @@ ENTPM.STRUCTURE = {
 
 	variableTypes: {
 		minima: {
-			index: "▲"
+			index: "^"
 		},
 		maxima: {
-			index: "▼"
+			index: "_"
 		},
 		x: {
 			index: "x"
@@ -193,8 +193,8 @@ ENTPM.STRUCTURE = {
 			b: "emotional" // to identifier
 		},
 		"dimension": {
-			maxima: "actual",
-			minima: "virtual",
+			maxima: "virtual",
+			minima: "actual",
 			x: "physicality",
 			y: "technology",
 			z: "mind",

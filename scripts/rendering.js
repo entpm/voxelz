@@ -72,19 +72,22 @@ ENTPM.VOXELZ.forEach(function(voxel){
   if(!voxel.elementalType) {
   	element.querySelector(".weight").innerHTML = "0."
   };
-	element.querySelector(".weight").innerHTML += voxel.indexes[0];
+  if(voxel.elementalType) {
+  	element.querySelector(".weight").innerHTML += voxel.levelIndex;
+	} else {
+		element.querySelector(".weight").innerHTML += voxel.indexes[0];
+	};
 
 	if(voxel.indexes.length >= 3) {
 		element.querySelector(".weight").innerHTML += ".0"
 
-		// TODO X.0+ has additional 0 at the end
 		element.querySelector(".weight").innerHTML += "."+voxel.levelIndex;
 
 		for(var i = 1; i <= Number(voxel.indexes[1]); i++) {
 			element.querySelector(".weight").innerHTML += ".0";
 		};
 
-		if(voxel.indexes[2] != "+") {
+		if(voxel.indexes[2] != "~") {
 			element.querySelector(".weight").innerHTML += "."+voxel.indexes[2];
 		};
 	};
