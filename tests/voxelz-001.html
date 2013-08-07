@@ -2361,7 +2361,10 @@
   <p class="specified-count">
     <label>Number of voxelz in specification: </label><span></span>
   </p>
-  <p class="processing"></p>
+  <p class="processing">
+    <span class="progress"></span>
+    <span class="counter"></span>
+  </p>
   <p class="errors"></p>
 </section>
 
@@ -2378,7 +2381,8 @@
       specifiedVoxelz = $(".specification .element"),
       generatedVoxelz = $("#container .element"),
       specifiedVoxelzHash = {},
-      processing = output.find(".processing"),
+      processing = output.find(".processing .progress"),
+      counter = output.find(".processing .counter")
       errors = output.find(".errors");
 
   specifiedVoxelz.each(function(index, voxel) {
@@ -2417,7 +2421,14 @@
         voxelName = voxel.find(".name").text(),
         voxelID = voxel.find(".symbol").text(),
         specifiedVoxel = specifiedVoxelzHash[voxelID],
-        differences = compareVoxelz(voxel,specifiedVoxel);
+        differences = [];
+
+    if(!specifiedVoxel) {
+      errors.html( errors.html()+"'"+voxelName+"' did not found in specification"+"<br/>");
+      resultMarker = "#";
+    } else {
+      differences = compareVoxelz(voxel,specifiedVoxel);
+    };
 
     if(differences.length > 0) {
       $.each(differences, function(index,error) {
@@ -2426,6 +2437,7 @@
       resultMarker = "#";
     };
 
+    counter.text( "("+(index+1)+"/"+generatedVoxelz.length+")");
     processing.text( processing.text()+resultMarker);
   });
 
