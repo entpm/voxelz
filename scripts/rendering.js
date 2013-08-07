@@ -84,7 +84,7 @@ ENTPM.VOXELZ.forEach(function(voxel){
 			element.querySelector(".weight").innerHTML += ".0";
 		};
 
-		if(voxel.indexes[2] != "+") {
+		if(voxel.indexes[2] != "~") {
 			element.querySelector(".weight").innerHTML += "."+voxel.indexes[2];
 		};
 	};
