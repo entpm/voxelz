@@ -2381,14 +2381,11 @@
       processing = output.find(".processing"),
       errors = output.find(".errors");
 
-  output.find(".generated-count span").text( generatedVoxelz.length )
-  output.find(".specified-count span").text( specifiedVoxelz.length )
-
   specifiedVoxelz.each(function(index, voxel) {
     var voxel = $(voxel),
-        voxelName = voxel.find(".name").text();
+        voxelID = voxel.find(".symbol").text();
 
-    specifiedVoxelzHash[voxelName] = voxel;
+    specifiedVoxelzHash[voxelID] = voxel;
   });
 
   function compareVoxelz(generated, specified) {
@@ -2404,25 +2401,29 @@
     };
 
     if(generatedNumber != specifiedNumber) {
-      differences.push("'"+voxelName+"'"+" BIG ID is: "+generatedNumber+" but should be: "+specifiedNumber);
+      differences.push("'"+voxelName+"'"+" level is: "+generatedNumber+" but should be: "+specifiedNumber);
     };
 
     return differences;
   };
 
+
+  output.find(".generated-count span").text( generatedVoxelz.length )
+  output.find(".specified-count span").text( specifiedVoxelz.length )
+
   generatedVoxelz.each(function(index,voxel) {
     var resultMarker = ".",
         voxel = $(voxel),
         voxelName = voxel.find(".name").text(),
-        voxelSymbol = voxel.find(".symbol").text(),
-        specifiedVoxel = specifiedVoxelzHash[voxelName],
+        voxelID = voxel.find(".symbol").text(),
+        specifiedVoxel = specifiedVoxelzHash[voxelID],
         differences = compareVoxelz(voxel,specifiedVoxel);
 
     if(differences.length > 0) {
       $.each(differences, function(index,error) {
         errors.html( errors.html() + error + "<br/>");
       });
-
+      resultMarker = "#";
     };
 
     processing.text( processing.text()+resultMarker);
