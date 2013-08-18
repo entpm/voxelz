@@ -379,10 +379,10 @@ ENTPM.STRUCTURE = {
 
 	variableTypes: {
 		minima: {
-			index: "^"
+			index: "_"
 		},
 		maxima: {
-			index: "_"
+			index: "^"
 		},
 		x: {
 			index: "x"
